@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoOpenAI", "DemoOpenAI\DemoOpenAI.csproj", "{6113E857-B612-4A64-8481-8D74B18ED82C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoOpenAI.DAL", "DemoOpenAI.DAL\DemoOpenAI.DAL.csproj", "{990F3A08-4B35-4DB6-BC77-CF05DD3F756C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoOpenAI.BLL", "DemoOpenAI.BLL\DemoOpenAI.BLL.csproj", "{2E84A643-911B-47AA-B2AE-82F7CE98FEE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6113E857-B612-4A64-8481-8D74B18ED82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6113E857-B612-4A64-8481-8D74B18ED82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6113E857-B612-4A64-8481-8D74B18ED82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6113E857-B612-4A64-8481-8D74B18ED82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990F3A08-4B35-4DB6-BC77-CF05DD3F756C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990F3A08-4B35-4DB6-BC77-CF05DD3F756C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990F3A08-4B35-4DB6-BC77-CF05DD3F756C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990F3A08-4B35-4DB6-BC77-CF05DD3F756C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E84A643-911B-47AA-B2AE-82F7CE98FEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E84A643-911B-47AA-B2AE-82F7CE98FEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E84A643-911B-47AA-B2AE-82F7CE98FEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E84A643-911B-47AA-B2AE-82F7CE98FEE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
