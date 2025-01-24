@@ -15,4 +15,14 @@
     <ProjectReference Include="..\DemoOpenAI.DAL\DemoOpenAI.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Audio\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Audio\81fc2d3c-ad04-4529-828a-9e44650b6108.mp3" />
+    <None Include="wwwroot\Images\5320d713-1727-4f63-b303-5a199f18a6fa.png" />
+  </ItemGroup>
+
 </Project>

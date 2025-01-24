@@ -18,9 +18,31 @@ namespace DemoOpenAI.DAL.Services
             {
                 throw new Exception("Connection à l'API impossible");
             }
-            return JsonConvert.DeserializeObject<CompletionResponse>(
-                await response.Content.ReadAsStringAsync()
-            ) ?? throw new Exception("Déserialisation impossible");
+            return await response.Content.ReadFromJsonAsync<CompletionResponse>() 
+                ?? throw new Exception(); ;
         }
+
+        public async Task<Stream> GetSpeech(SpeechRequest request)
+        {
+            HttpResponseMessage response = await httpClient.PostAsJsonAsync("audio/speech", request);
+            if(!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Connection à l'API impossible");
+            }
+            return await response.Content.ReadAsStreamAsync();
+        }
+
+        public async Task<ImageResponse> GetImageAsync(ImageRequest request)
+        {
+            HttpResponseMessage response = await httpClient.PostAsJsonAsync("images/generations", request);
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Connection à l'API impossible");
+            }
+            string content = await response.Content.ReadAsStringAsync();
+            return await response.Content.ReadFromJsonAsync<ImageResponse>()
+                ?? throw new Exception();
+        }
+
     }
 }

@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddOpenAI(builder.Configuration["OpenAI:ApiKey"] ?? throw new Exception("Missing config"));
 
 builder.Services.AddScoped<IOpenAIBusinessService, OpenAIBusinessService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
@@ -22,6 +23,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// pour ajouter wwwroot en dossier public
+app.UseStaticFiles();
 
 app.UseAuthorization();
 
